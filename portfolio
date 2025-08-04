@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sangari Ganesan | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9ff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00ccff;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .hero h2 {
+      margin-top: 20px;
+      font-size: 28px;
+      color: #444;
+      animation: slideIn 1s ease;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #4a4a4a;
+    }
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skills li {
+      background: #ddeeff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: transform 0.3s, background 0.3s;
+      cursor: pointer;
+    }
+    .skills li:hover {
+      transform: scale(1.1);
+      background: #cde0ff;
+    }
+    .projects .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .projects .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .contact a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.7s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    @keyframes slideIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sangari Ganesan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="C:\Users\sanga\OneDrive\Pictures\profile.jpg" alt="Sangari Ganesan Photo" />
+    <h2>Hello, I'm Sangari</h2>
+    <p>Aspiring Python Developer | CSE Student</p>
+  </div>
+
+  <section id="about" class="about reveal">
+    <h2>About Me</h2>
+    <p>Hi, I'm Sangari, a passionate Computer Science student and aspiring Python developer. I love solving problems, building creative projects, and always learning something new.</p>
+  </section>
+
+  <section id="skills" class="skills reveal">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>java</li>
+      <li>datastructures</li>
+      <li>Problem Solving</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects reveal">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Music Player (JavaScript)</h3>
+      <p>A web-based music player with custom UI and playlist support.</p>
+    </div>
+
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>This portfolio itself! Built using HTML, CSS, and a little JavaScript. Fully responsive and animated.</p>
+    </div>
+    <div class="card">
+      <h3>calculator</h3>
+      <p>A basic calculator using HTML, CSS, and JavaScript to perform simple math operations.</p>
+    </div>
+    <div class="card">
+      <h3>organ donation management</h3>
+      <p>A web-based system that manages organ donor and recipient data, automates matching, and facilitates efficient, transparent organ transplants.
+</p>
+    </div>
+    <div class="card">
+      <h3>image gallery</h3>
+      <p>A web-based application that allows users to upload, view, organize, and manage images in a clean, user-friendly interface.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <h2>Contact Me</h2>
+    <p>Email: sangarig07@gmail.com</p>
+    <p>GitHub: <a href=https://github.com/sangariG>sangariG</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sangari Ganesan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Scroll-based reveal animation
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+
+</body>
+</html>
